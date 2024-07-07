@@ -18,32 +18,39 @@
 				font-size: 4em;
 				margin: 0.2em;
 			}
-			.date {
-				font-size: 0.7em;
+			.league_table {;
+				border:1px 
+				solid #EEEEEE;				
 			}
-			.metadata {
-				font-size: 0.7em;
-			}
-			.matches {
-				padding:10%;
-			}
-			.team {
-				width: 10%;
-				font-weight: bold;
-			}
-			.goalscorers {
-				width: 10%;
-				font-size: 0.8em;
-			}
-			
 			thead {
 				color: white;
 				background: #37003c;
 			}
-
-			.table {;
-				border:1px solid #EEEEEE;				
+			.matches {
+				padding:10%;
 			}
+			.date {
+				font-size: 0.7em;
+				vertical-align: top;
+			}
+			.team {
+				width: 10%;
+				font-weight: bold;
+				vertical-align: top;
+			}
+			.goalscorers {
+				width: 10%;
+				font-size: 0.8em;
+				vertical-align: top;
+			}
+			.score {
+				vertical-align: top;
+				width: 4%;
+			}
+			.metadata {
+				font-size: 0.7em;
+				vertical-align: top;
+			}			
 		</style>
 	</head>
 	<body>
@@ -51,7 +58,7 @@
 		<h1 align=center>MUFF League</h1>
 		
 		<container>
-			<table class="table" align=center>
+			<table class="league_table" align=center>
 				<thead class="table_header">
 					<tr>
 						<th width=10%>Pos</th>
@@ -93,49 +100,64 @@
 			</table>
 		</container>
 		<div class="matches">
-			<table border="0" align=center>
+			<table align=center>
 				<tr>
-					<td class="date" width=10%>30 September 2019</td>
+					<td class="date" rowspan="2" width=10%>
+						30 September 2019
+						<br>
+						15:00
+					</td>
 					<td class="team" align=right>Chelsea</td>
-					<td width=4% align=center>0-1</td>
+					<td class="score" align=center>0-1</td>
 					<td class="team">West Ham</td>
-					<td class="metadata" width=10% align=right>Stamford Bridge</td>
+					<td class="metadata" rowspan="2" width=10% align=right>
+						Stamford Bridge
+						<br>
+						Attendance: 40,595
+						<br> 
+						Referee: Jonathan Moss
+					</td>
 				</tr>
 				<tr>
-					<td class="date" width=10%>15:00</td>
+					<td class="goalscorers" align=right>
+					</td>
 					<td></td>
-					<td></td>
-					<td class="goalscorers">Aaron Cresswell ⚽ 48'</td>
-					<td class="metadata" width=10% align=right>Attendance: 40,595</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td class="metadata" align=right>Referee: Jonathan Moss</td>
+					<td class="goalscorers">
+						Aaron Cresswell ⚽ 48'<br>
+						Pablo Fornals 🟨 65'<br>
+						Andriy Yarmolenko 🟨 88'<br>
+						Aaron Cresswell 🟨 90+5'
+					</td>
 				</tr>
 			</table>
 			<br>
 			<br>
-			<table border="0" align=center>
-					<td class="date" width=10%>23 September 2018</td>
+			<table align=center>
+					<td class="date" rowspan="2" width=10%>
+						23 September 2018
+						<br>
+						14:30
+					</td>
 					<td class="team" align=right>West Ham</td>
-					<td width=4% align=center>0-0</td>
+					<td class="score" align=center>0-0</td>
 					<td class="team">Chelsea</td>
-					<td class="metadata" width=10% align=right>London Stadium</td>
-				<tr>
-					<td class="date" >13:30</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td class="metadata" align=right>Attendance: 56,875</td>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td class="metadata" align=right>Referee: Mike Dean</td>
+					<td class="metadata" rowspan="2" width=10% align=right>
+						London Stadium
+						<br>
+						Attendance: 56,875
+						<br> 
+						Referee: Mike Dean
+					</td>
+					<tr>
+						<td class="goalscorers" align=right>
+							N'Golo Kanté 🟨 50'<br>
+						</td>
+						<td></td>
+						<td class="goalscorers">
+							Felipe Anderson 🟨 52'<br>
+							Robert Snodgrass 🟨 90+3'
+						</td>
+					</tr>
 			</table>
 		</div>
 	</body>
